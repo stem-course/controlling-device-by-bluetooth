@@ -1,5 +1,5 @@
 /*
-Code by: www.munphurid.com
+Code by: 
 M.Hashir
 
 This is a code for Bluetooth controlled car
