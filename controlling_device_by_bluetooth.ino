@@ -2,14 +2,15 @@
   Code by:
   M.Hashir
 
-  This is a code for Bluetooth controlled car
+This is a code for controlling a device by bluetooth
 
   Hardware:
   Is bought from www.munphurid.com
-  -Arduino UNO
-  -HC-05 Bluetooth Module
-  -4 male to female wires
-  -Buzzer
+  - Arduino UNO
+  - HC-05 Bluetooth Module
+  - 7 male to female wires
+  - Relay module
+  - Bulb and battery circuit
 
   Connections:
   Bluetooth module and Arduino
@@ -18,13 +19,14 @@
   -Connect VCC of Bluetooth module to 5V of Arduino
   -Connect GND of Bluetooth module to GND of Arduino
 
-  -Connect longer leg of buzzer to pin 11 of Arduino
-  -Connect shorter leg of buzzer to GND of Arduino
+-	Connect VCC pin of relay module to pin 5V of the Arduino board.
+-	Connect IN pin of relay module to pin 11 of the Arduino board.
+-	Connect GND pin of relay module to pin GND of the Arduino board.
 
 */
 
-int device = 11;
-int device2 = 13;
+int device = 11;          //Relay module is connected on this pin
+int device2 = 13;         //Built-in LED on this pin can be controlled
 void setup(void)
 {
   pinMode(device, OUTPUT);
